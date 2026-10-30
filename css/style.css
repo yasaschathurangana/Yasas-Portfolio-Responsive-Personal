@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /*===== BASE =====*/
-*,
-::before,
-::after {
+*, ::before, ::after {
   box-sizing: border-box;
 }
 
@@ -17,13 +15,10 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: .938rem;
   background-color: #0d1117;
-  color: #e7eaee;
+  color: #8b949e;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, h4, p {
   margin: 0;
   color: #f0f6fc;
 }
@@ -111,11 +106,9 @@ img {
     border-left: 1px solid #30363d;
     transition: 0.4s ease-in-out;
   }
-
   .nav__link {
     color: #8b949e;
   }
-
   .nav__link:hover {
     color: hsl(224, 89%, 65%);
   }
@@ -208,12 +201,11 @@ img {
   transform: translateY(-2px);
 }
 
-/* Carefully adjusted home image positioning */
 .home__img {
   position: absolute;
   right: 1rem;
   bottom: 0;
-  width: 270px;
+  width: 240px;
 }
 
 .home__blob {
@@ -256,6 +248,8 @@ img {
 .about__text {
   color: #f0f6fc;
   line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 .about__img {
@@ -266,6 +260,59 @@ img {
   width: 200px;
   border-radius: 0.5rem;
   border: 2px solid #30363d;
+}
+
+/* Academic Journey Inside About */
+.about__education {
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.about__education-title {
+  color: hsl(224, 89%, 65%);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about__education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about__education-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.about__education-year {
+  color: hsl(224, 89%, 65%);
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.about__education-degree {
+  color: #f0f6fc;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.about__education-institution {
+  color: #f0f6fc;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  align-self: start;
+}
+
+.about__education-desc {
+  color: #8b949e;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 /* ===== SKILLS =====*/
@@ -314,7 +361,6 @@ img {
   color: #f0f6fc;
 }
 
-/* ===== project =====*/
 .project__container {
   row-gap: 2rem;
 }
@@ -406,7 +452,7 @@ img {
 }
 
 .footer__copy {
-  font-size: .90rem;
+  font-size: .95rem;
   color: #f0f6fc;
 }
 
@@ -415,7 +461,6 @@ img {
   .home {
     row-gap: 2rem;
   }
-
   .home__img {
     width: 200px;
   }
@@ -425,48 +470,40 @@ img {
   .home {
     padding: 4rem 0 2rem;
   }
-
   .home__social {
     padding-top: 0;
     padding-bottom: 2.5rem;
     flex-direction: row;
     align-self: flex-end;
   }
-
   .home__social-icon {
     margin-bottom: 0;
     margin-right: 2rem;
   }
-
   .home__img {
     width: 280px;
     bottom: 15%;
     right: 2rem;
   }
-
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: initial;
   }
-
   .skills__container {
     grid-template-columns: 0.7fr;
     justify-content: center;
     column-gap: 1rem;
   }
-
   .project__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     padding-top: 2rem;
   }
-
   .contact__form {
     width: 360px;
     padding-top: 2rem;
   }
-
   .contact__container {
     justify-items: center;
   }
@@ -476,68 +513,54 @@ img {
   body {
     margin: 0;
   }
-
   .section {
     padding-top: 4rem;
     padding-bottom: 3rem;
   }
-
   .section-title {
     margin-bottom: 3rem;
   }
-
   .section-title::after {
     width: 80px;
     top: 3rem;
   }
-
   .nav {
     height: 4.5rem;
   }
-
   .nav__list {
     display: flex;
     padding-top: 0;
   }
-
   .nav__item {
     margin-left: 3rem;
     margin-bottom: 0;
   }
-
   .nav__toggle {
     display: none;
   }
-
   .nav__link {
     color: #f0f6fc;
   }
-
   .home {
     padding: 8rem 0 2rem;
   }
-
   .home__img {
     width: 360px;
     bottom: 10%;
     right: 3rem;
   }
-
   .about__container {
     padding-top: 2rem;
   }
-
   .about__img img {
     width: 300px;
   }
-
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     align-items: center;
     text-align: initial;
   }
-
   .project__container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
@@ -548,11 +571,9 @@ img {
   body {
     font-size: 1rem;
   }
-
   .home__title {
     font-size: 3.5rem;
   }
-
   .section-title {
     font-size: 2rem;
   }
@@ -563,11 +584,9 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
-
   .home {
     padding: 10rem 0 2rem;
   }
-
   .home__img {
     width: 420px;
     bottom: 12%;
